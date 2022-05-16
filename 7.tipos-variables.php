@@ -6,6 +6,7 @@
     echo "<br>";
     echo $y;
     echo "<br>";
+    echo "<br>";
     var_dump($x); //string(12) "Hello world!" tipo de variable y caracteres de esa variable de cadena de texto
     echo "<br>";
 //---------Ejemplo de integer

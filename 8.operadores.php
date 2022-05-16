@@ -2,8 +2,8 @@
 
 /* Operadores Aritméticos:
 +	Suma
--	Resta
-*	Multiplicación
+-	Resta 
+*	Multiplicación o producto
 /	División
 %	Resto
 **	Exponente 10^6
