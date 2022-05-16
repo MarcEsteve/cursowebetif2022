@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body onload="todoCorrecto()" onkeydown="cambiaParrafo()">
+    <h1>JavaScript en el HEAD</h1>
+    <p id="cambia" onchange="dentro()">Un párrago cualquiera</p>
+    <p id="raton">Este párrago para el ejercicio</p>
+    <button style="color: blueviolet;" type="button" onclick="cambiaParrafo()">CAMBIO con un CLICK</button>
+    <br>
+    <button style="color: blue;" type="button" ondblclick="cambiaParrafo()">CAMBIO con DOBLE CLICK</button>
+    <br>
+    <button style="color: chocolate;" type="button" onmouseover="cambiaParrafo()">CAMBIO con RATÓN POR ENCIMA</button>
+    <br>
+    <button style="background-color: rgb(44, 105, 90);" type="button" onmouseout="cambiaParrafo()">CAMBIO con RATÓN SALE de ENCIMA</button>
+    <br>
+    <button onmouseover="dentro()" onmouseout="fuera()">ELEMENTO EJ EVENTOS</button>
+    <p id="gracias"></p>
+    <script src="codigo-eventos.js">
+        //Llamamos al código externo JavaScript
+    </script>
+</body>
+</html>

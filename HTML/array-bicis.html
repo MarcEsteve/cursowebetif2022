@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>JavaScript Matriz-Arrays</h2>
+    <p>Los índices de matriz están basados ​​desde el cero, lo que significa que el tercer elemento es [2].</p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+        var bici = ["BH", "Orbea", "Specialized"];
+        document.getElementById("demo1").innerHTML = "La bicicleta es " + bici[2];
+        bici[5]="Decathlon";
+        document.getElementById("demo2").innerHTML = "La nueva bicicleta es " + bici[4];// es indefinido, pero si pongo bici[5] me saldria "Decathlon"
+        bici[3]=3478234;
+        document.getElementById("demo3").innerHTML = "La nueva bicicleta es " + bici[3];
+        bici[6]=true;
+        document.getElementById("demo4").innerHTML = "La nueva bicicleta es " + bici[6];
+    </script>
+</body>
+</html>

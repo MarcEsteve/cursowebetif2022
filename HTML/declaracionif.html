@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p>Condición 1: Muestra "Buenos dias" desde las 5h de la mañana hasta las 13h</p>
+    <p>Condición 2: Muestra "Buenos tardes" desde las 14h de la tarde hasta las 19h</p>
+    <p>Condición 3: Muestra "Buenos noches" para cualquier otra hora</p>
+    <p id="buenas"></p>
+    <script>
+        var hour = 22;
+        var saludo;
+        if (hour >= 5 && hour <14) {
+            saludo = "Buenos dias";
+        } else if (hour >= 14 && hour <20) {
+            saludo = "Buenos tardes";
+        } else {
+            saludo = "Buenos noches";
+        }
+        document.getElementById("buenas").innerHTML = "El saludo es: '" + saludo + "'";     
+    </script>
+</body>
+</html>

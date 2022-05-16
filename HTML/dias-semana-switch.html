@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Ejemplo de SWITCH</h1>
+    <p id="texto"></p>
+    <script>
+        var dia;
+        // Con la funcion new Date().getDay() pondriamos el dia de la semana real que marca el ordenador
+        switch (new Date().getDay()) {
+            case 0:
+                dia = "Domingo"; break;
+            case 1:
+                dia = "Lunes"; break;
+            case 2:
+                dia = "Martes"; break;
+            case 3:
+                dia = "Miércoles"; break;
+            case 4:
+                dia = "Jueves"; break;
+            case 5:
+                dia = "Viernes"; break;
+            case 6:
+                dia = "Sábado";
+        }
+        document.getElementById("texto").innerHTML = "Hoy es " + dia + " igual al dia " + new Date().getDay() + " de la semana";
+        //Muestra el valor de la variable "dia" y el valor en el SWITCH del dia actual en número del 0 al 6 (Domingo a Sábado)
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>JavaScript Objecto</h2>
+    <p id="demo"></p>
+    <p id="coche"></p>
+    <p id="person"></p>
+    <script>
+        var persona = {
+            nombre : "John", 
+            apellido : "Smith",
+            edad : 53,
+            colorOjos : "azules"
+        };
+        document.getElementById("demo").innerHTML = persona.nombre + " " + persona.apellido + ", que  tiene " + persona.edad + " años de edad, tiene también los ojos " + persona.colorOjos + ".";
+        //John Smith, que tiene 53 años de edad, tiene también los ojos azules;
+
+        var vehiculo = {
+            tipo : "coche", marca : "Tesla", modelo : 3, matricula: "9875ABC", seguro: true
+        }
+        document.getElementById("coche").innerHTML = "Nuestro " + vehiculo.tipo + " es de la marca " + vehiculo.marca + " del modelo " + vehiculo.modelo + " y su matricula es " + vehiculo.matricula + " y tiene seguro (" + vehiculo["seguro"] + ")";
+
+        var person = { // Variable de tipo Objeto
+            firstName: "John", // Propiedad
+            lastName : "Doe", // Propiedad
+            id : 5566, // Propiedad
+            fullName : function() { // Método
+                return this.firstName + " " + this.lastName + " tiene la ID:" + this.id; // Devuelve "John Doe tiene la ID:5566"
+            }
+        };
+        document.getElementById("person").innerHTML = "El resultado del método es " + person.fullName();
+    </script>
+</body>
+</html>

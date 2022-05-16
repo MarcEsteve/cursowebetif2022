@@ -1,0 +1,3 @@
+//3. CREACIÓN DEL CÓDIGO QUE AFECTA EL HTML ENLAZADO
+var x = 11; // Crea y se le da valor 11 a la variable X.
+document.getElementById("pepito").innerHTML = "El resultado de multiplicar 11 por 7 es igual a: " + 7 * x; // En el propio documento, en el párrafo con la id="pepito" le daremos el valor con innerHMTL de la cadena texto "constante string" concatenado (+) con un valor numérico constante igual a 7 y concatenado (+) con una variable X numérica igual a 11.

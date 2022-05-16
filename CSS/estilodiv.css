@@ -1,0 +1,11 @@
+div {
+	background-color: green;
+	color: white;
+	padding: 25px;
+	text-align: center;
+}
+div:hover {
+	background-color: blue;
+	text-align: right;
+	font-size:3em;
+}

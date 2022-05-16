@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p>Condición estación 1: "INVIERNO" los meses de 12 (diciembre), 1 (enero) y 2 (febrero)</p>
+    <p>Condición estación 2: "PRIMAVERA" los meses de 3 , 4 y 5</p>
+    <p>Condición estación 3: "VERANO" los meses de 6, 7  y 8</p>
+    <p>Condición estación 4: "OTOÑO" los meses de 9, 10 Y 11</p>
+    <p id="estacion"></p>
+    <script>
+        var numeromes=11;
+        var nombremes;
+        var estacion;
+        if (numeromes == 12 || numeromes ==1 || numeromes ==2) {
+            estacion = "INVIERNO";
+        } else if (numeromes == 3 || numeromes ==4 || numeromes ==5) {
+            estacion = "PRIMAVERA";
+        } else if (numeromes == 6 || numeromes ==7 || numeromes ==8) {
+            estacion = "VERANO";
+        } else {
+            estacion = "OTOÑO";
+        }
+        document.getElementById("estacion").innerHTML = "El número del mes: " + numeromes + " es " + estacion;     
+    </script>
+</body>
+</html>
