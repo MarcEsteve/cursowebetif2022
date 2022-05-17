@@ -2,20 +2,21 @@
 // $color = "azul";
     //prompt function
     function prompt($prompt_msg){
-        echo("<script type='text/javascript'> var answer = prompt('".$prompt_msg."'); </script>");
+        echo("<script> var answer = prompt('".$prompt_msg."'); </script>");
 
-        $answer = "<script type='text/javascript'> document.write(answer); </script>";
+        $answer = "<script> this.write(answer); </script>";
         return($answer);
     }
 
     //program
-    $prompt_msg = "Please type your name.";
-    $name = prompt($prompt_msg);
+    $prompt_msg = "Escribe tu color:";
+    $color = prompt($prompt_msg);
+	echo $color;
 
-    $output_msg = "Hello there ".$name."!";
-    echo($output_msg);
+    // $output_msg = "Hello there ".$name."!";
+    // echo($output_msg);
 ?>
-<?php if($name == "azul"){ ?>
+<?php if($color == "azul"){ ?>
 	<!DOCTYPE html>
 	<html lang="es">
 		<head>
@@ -26,7 +27,7 @@
 		</body>
 	</html>
 <?php } ?>
-<?php if($name == "rojo"){ ?>
+<?php if($color == "rojo"){ ?>
 	<!DOCTYPE html>
 	<html lang="es">
 		<head>
