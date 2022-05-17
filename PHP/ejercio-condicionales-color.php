@@ -16,7 +16,7 @@ $color = "azul";
 	<!DOCTYPE html>
 	<html lang="es">
 		<head>
-			<title>Ejercicio de color rojo</title>
+			<title>Ejercicio color Rojo</title>
 		</head>
 		<body>
 			<h1>Color rojo escogido</h1>
