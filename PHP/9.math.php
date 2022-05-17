@@ -2,39 +2,43 @@
 
 // Funciones matemáticas:
 
-// echo(pi()); // 3.1415926535898
-$radio = 18; //Comento
-$perimetro = 2*pi()*$radio;
+//echo(pi()); // 3.1415926535898
+//$radio = 18; //Comento
+//$perimetro = 2*pi()*$radio;
 // echo $perimetro;
-
-// echo(min(0, 150, 30, 20, -8, -200));  // -200
+// echo "Valores 150, 0, 30, 20, -8, -200";
+// echo "<br>min():" . (min(150, 0, 30, 20, -8, -200)) . "<br>max():";  // -200
 // echo(max(0, 150, 30, 20, -8, -200));  // 150
 
 // echo(abs(-6.7));  // returns 6.7
-// echo(sqrt(64));  // returns 8
+// echo "Raíz cuadrada de 64: " . (sqrt(64));  // returns 8
 // echo(round(0.60));  // returns 1
 // echo(round(0.49));  // returns 0
 
 # ceil() es como round() redondeo hacia arriba
-echo(ceil(0.60) . "<br>");
-echo(ceil(0.40) . "<br>");
-echo(ceil(5) . "<br>");
-echo(ceil(5.1) . "<br>");
-echo(ceil(-5.1) . "<br>");
-echo(ceil(-5.9));
+// echo(ceil(0.60) . "<br>");
+// echo(ceil(0.40) . "<br>");
+// echo(ceil(5) . "<br>");
+// echo(ceil(5.1) . "<br>");
+// echo(ceil(-5.1) . "<br>");
+// echo(ceil(-5.9));
 # floor() es como round() redondeo para abajo
-echo(floor(0.60) . "<br>");
-echo(floor(0.40) . "<br>");
-echo(floor(5) . "<br>");
-echo(floor(5.1) . "<br>");
-echo(floor(-5.1) . "<br>");
-echo(floor(-5.9));
+// echo(floor(0.60) . "<br>");
+// echo(floor(0.40) . "<br>");
+// echo(floor(5) . "<br>");
+// echo(floor(5.1) . "<br>");
+// echo(floor(-5.1) . "<br>");
+// echo(floor(-5.9));
 
-// echo(rand());
-// echo(rand(10, 100));
+// echo(rand()) ."<br>";
+// echo(rand()) ."<br>";
+// echo(rand()) ."<br>";
+// echo(rand()) ."<br>";
+// echo(rand(10, 100)); 
+// Número Aleatorios del [10 al 100] inclusive
 
 # TODAS LAS FUNCIONES MATEMÁTICAS EN PHP
-
+// https://www.php.net/manual/es/ref.math.php
 /* 
 abs()	        Devuelve el valor absoluto (positivo) de un
 acos()	        Devuelve el arco coseno de un número.
@@ -87,8 +91,10 @@ tan()	        Devuelve la tangente de un número.
 tanh()	        Devuelve la tangente hiperbólica de un número.
 */
 
-# CONSTANTES matemáticas predefinidas de PHP
+// echo (2*pow(2,3)); //2*2^3
 
+# CONSTANTES matemáticas predefinidas de PHP
+//https://www.php.net/manual/es/math.constants.php
 /*
 CONSTANTE	            VALOR	                DESCRIPCIÓN
 INF	                    INF	                    El infinito
@@ -115,5 +121,11 @@ PHP_ROUND_HALF_DOWN	    2	                    Mitades redondas hacia abajo
 PHP_ROUND_HALF_EVEN	    3	                    Redondear mitades a números pares
 PHP_ROUND_HALF_ODD	    4	                    Redondear mitades a números impares
 */
+
+//EJERCICIO
+// Sabiendo el perimetro de la circumferencia calcula el radio utilizando la constante de M_PI
+$perimetro = 113.1;
+$radio = $perimetro/(2*M_PI);
+echo $radio;
 
 ?>
