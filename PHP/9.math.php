@@ -1,6 +1,6 @@
 <?php 
 
-// Funciones matemáticas:
+// Funciones Matemáticas:
 
 //echo(pi()); // 3.1415926535898
 //$radio = 18; //Comento
