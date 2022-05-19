@@ -1,5 +1,10 @@
 <?php
 
+// 2022 19 05 EJERCICIO ROBOT
+// 1. Crea dos variables de velocidad de dos motores: $VelRizq, $VelRder tipo número entero.
+
+// 2. En función del valor de cada rueda, decimos hacia donde se dirige. Ejemplo: $VelRizq>$VelRder entonces el robot gira a la derecha.
+// Giro derecho, izquierdo y adelante, idem atrás
 $VelRizq=0;
 $VelRder=0;
 
