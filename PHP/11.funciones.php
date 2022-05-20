@@ -18,18 +18,19 @@ function saludo($nombre){
 	return 'Saludo, ' . $nombre;
 }
 
-echo saludo('Angel') . '<br />';
-echo saludo('Fernando') . '<br />';
-echo saludo('Rafael') . '<br />';
-echo saludo('Manuel') . '<br />';
+// echo saludo('Angel') . '<br />';
+// echo saludo('Fernando') . '<br />';
+// echo saludo('Rafael') . '<br />';
+// echo saludo('Manuel') . '<br />';
 
 #Con dos parámetros
 
-// function sumar($numero1, $numero2){
-// 	$resultado = $numero1 + $numero2;
-// 	return $resultado;
-// }
+function sumar($numero1, $numero2){
+	$resultado = $numero1 + $numero2;
+	return $resultado;
+}
 
-// $resultado = sumar(10, 15);
+$resultado = sumar(10, 15); //Le damos el valor de la suma al llamar la función
+echo $resultado; //Mostramos el valor en pantalla
 
 ?>
