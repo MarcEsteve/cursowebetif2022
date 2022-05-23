@@ -7,7 +7,7 @@
 
         //Métodos
         public function guardar($nombre, $apellido){
-            $this->nombre[] = $nombre;
+            $this->nombre[] = $nombre; // $this hace referencia a cualquier objeto que lo llame, es decir, tanto a $persona como a $marc.
             $this->apellido[] = $apellido;
         }
         public function formato($nombre, $apellido){
