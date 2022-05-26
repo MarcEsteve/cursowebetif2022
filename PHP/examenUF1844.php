@@ -42,20 +42,25 @@
             $xerox = new Impressora();
             $canon= new Impressora();
             echo $hp->tamany . ": Tamany de HP<br>";
-            echo $xerox->tamany . ": Tamany de Xerox<br>"; 
+            echo $xerox->tamany . ": Tamany de Xerox<br>";
+            echo $canon->tamany . ": Tamany de Canon<br>"; 
             //1.Mostrar tamaño por defecto de canon
             $hp->tamany="DINA3";
             $xerox->tamany="DINA2";
+            $canon->tamany="DINA5";
             //2. Cambiar tamaño por defecto de canon
-            echo $hp->tamany . ": Tamany de HP<br>"; // Propiedad $tamany del objeto $hp el valor es "DINA2"
-            echo $xerox->tamany . ": Tamany de Xerox<br>";
+            echo $hp->tamany . ": Tamany de HP actual<br>"; // Propiedad $tamany del objeto $hp el valor es "DINA2"
+            echo $xerox->tamany . ": Tamany de Xerox actual<br>";
             //3. Mostrar tamaño actual de canon
+            echo $canon->tamany . ": Tamany de Canon actual<br>";
             echo $hp->color . "<br>"; // Propiedad $color del objeto $hp el valor es "negre"
             //"Es pot imprimir en DINA4, en color negre"
             echo "Es pot imprimir en " . $hp->tamany . ", en color " . $hp->color;
             echo "<br>";
             $hp->imprimeix(true,true,"DINA4","negre");
             //4. Llamad al metodo imprimeix con canon para mostrar el mismo resultado que lo que pido en el examen
+            echo "<br>";
+            $canon->imprimeix(true,true,"DINA4","negre");
     ?>
     
 </body>
