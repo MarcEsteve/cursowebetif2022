@@ -17,7 +17,7 @@
 </head>
 <body>
     <form action="recibe-post.php" method="post"> <!-- con action le decimos donde guarda los datos -->
-        <input type="text" placeholder="Nombre" name="nombre" id=""> <!-- el value lo define el usuario -->
+        <input type="text" placeholder="Escribe aqui el nombre" name="nombre" id=""> <!-- el value lo define el usuario -->
         <br>
         <label for="mujer">Mujer</label> <!-- El for del label se relaciona con id del input -->
         <input type="radio" name="sexo" value="mujer" id="mujer">  <!-- name iguales -->

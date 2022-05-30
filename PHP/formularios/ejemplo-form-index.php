@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo form index</title>
+    <title>Ejemplo form index con Método GET</title>
 </head>
 <body>
-    <form action="recibe-get.php" method="get"> <!-- con action le decimos donde guarda los datos -->
+    <form action="recibe-get.php" method="get"> <!-- con action le decimos donde guarda los datos y con el method le decimos de que forma GET/POST -->
         <input type="text" placeholder="Nombre" name="nombre" id=""> <!-- el value lo define el usuario -->
         <br>
         <label for="mujer">Mujer</label> <!-- El for del label se relaciona bon id del input -->
