@@ -7,9 +7,9 @@
 }
 
 body {
-	background:#F2F2F2;
+	background:#f2f2f2;
 	font-size: 16px;
-	font-family:"Roboto", Arial, sans-serif, helvetica;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .wrap {
@@ -38,7 +38,7 @@ form textarea {
 	width: 100%;
 	display: block;
 	margin-bottom:20px;
-	font-family:"Roboto", Arial, sans-serif, helvetica;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 1em;
 	color:#141938;
 }
@@ -82,7 +82,7 @@ form input[type="submit"]{
 	background: #ED572A;
 	color:#E1E9FA;
 	font-size: 1em;
-	font-family:"Roboto", Arial, sans-serif, helvetica;
+	font-family: 'Montserrat', sans-serif;
 	border-radius: 2px;
 	border:none;
 	float: right;
@@ -90,5 +90,5 @@ form input[type="submit"]{
 }
 
 form input[type="submit"]:hover{
-	background: #E64A19;
+	background: #a93411;
 }

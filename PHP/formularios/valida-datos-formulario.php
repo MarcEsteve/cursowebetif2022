@@ -54,7 +54,7 @@ if (isset($_POST['submit'])) {
             <div class="error"><?php echo $errorNombre; ?></div>
         <?php endif; ?>
         <br>
-        <input type="email" name="email" placeholder="Danos tu correo" id=""> <!--Tipo normal type="email"-->
+        <input type="texto" name="email" placeholder="Danos tu correo" id=""> <!--Tipo normal type="email"-->
         <?php if(!empty($errorCorreo)): ?>
             <div class="error"><?php echo $errorCorreo; ?></div>
         <?php endif; ?>

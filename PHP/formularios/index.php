@@ -46,6 +46,6 @@ if (isset($_POST['submit'])) {
 
 }
 
-require '12.index.view.php';
+require 'index.view.php';
 
 ?>
