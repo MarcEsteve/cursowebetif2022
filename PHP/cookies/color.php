@@ -1,5 +1,12 @@
 <?php
-setcookie('color', 'red', time() + 60 * 60 * 24 * 30, '/'); //Crea cookie de nombre color, valor red
+setcookie('color', 'orange', time() + 60 * 60 * 24 * 30, '/'); //Crea cookie de nombre color, valor red durante un mes y todo el dominio "localhost"
+
+//setcookie('color','rojo', time(), '/');
+//setcookie('color','red', time() - 60 * 60 * 24 * 365 * 53, '/');
+
+//setcookie('color1s', 'red', time() + 1, '/'); 
+//Crea cookie de pruebas durante 10 segundos
+
 ?>
 
 <!DOCTYPE html>
