@@ -1,10 +1,10 @@
 <?php
-$conexion = new mysqli('localhost', 'root', '', 'prueba_datos');
+$conexion = new mysqli('localhost', 'root', '', 'prueba_mysqli');
 
 if ($conexion->connect_errno){
 	die('Lo siento hubo un problema con el servidor');
 } else {
-	$statement = $conexion->prepare("INSERT INTO usuarios(ID, nombre, edad) VALUES(?, ?, ?)");
+	$statement = $conexion->prepare("INSERT INTO ejerciciocreate(ID, nombre, edad) VALUES(?, ?, ?)");
 	
 	// Remplazamos los placeholder ? con los valores que queremos usar.
 		// Una S por placeholder que tengamos.
