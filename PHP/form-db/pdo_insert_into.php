@@ -1,7 +1,7 @@
 <?php 
 
 	try {
-		$conexion = new PDO('mysql:host=localhost;dbname=heidisql_curso', 'root', '');
+		$conexion = new PDO('mysql:host=localhost;dbname=prueba_datos', 'root', '');
 
 		//Prepared Statements
 		$statement = $conexion->prepare('INSERT INTO usuarios VALUES (null, "Alex")');

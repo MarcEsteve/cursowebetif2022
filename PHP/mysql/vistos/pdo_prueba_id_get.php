@@ -3,7 +3,7 @@
 $id = $_GET['id'];
 
 try {
-	$conexion = new PDO('mysql:host=localhost;dbname=prueba_datos', 'root', '');
+	$conexion = new PDO('mysql:host=localhost;dbname=heidisql_curso', 'root', '');
 
 	//Prepared Statements
 	$statement = $conexion->prepare('SELECT * FROM usuarios WHERE id = :id');
