@@ -17,7 +17,7 @@
 				<option value="2">2</option>
 				<option value="3">3</option>
 			</select>
-			<input type="submit" name="submit" class="btn btn-primary" value="Enviar Correo">
+			<input type="submit" name="submit" class="btn btn-primary" value="Eliminar registro">
 		</form>
 	</div>
 </body>
