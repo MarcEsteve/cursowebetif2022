@@ -12,6 +12,13 @@ body {
 	font-family: "Oswald";
 }
 
+button {
+	color: #fff;
+	font-weight: normal;
+	font-size: 10px; 
+	text-align: center;
+}
+
 .visitantes {
 	background: #BB1F35;
 	width: 200px;
@@ -39,3 +46,4 @@ h1 {
 	font-weight: normal;
 	font-size: 30px;
 }
+

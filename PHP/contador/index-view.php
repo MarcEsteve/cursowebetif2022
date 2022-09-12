@@ -9,8 +9,10 @@
 <body>
 	<h1>Contador de Visitas</h1>
 	<div class="visitantes">
-		<p class="numero"><?php echo contar_usuarios(); ?></p>
+		<p class="numero"><?php echo contar_usuarios(false) ?></p>
 		<p class="texto">Visitas</p>
+        <input type="submit" name="select" value="reiniciar" onclick="reiniciar()" />
 	</div>
+    
 </body>
 </html>
