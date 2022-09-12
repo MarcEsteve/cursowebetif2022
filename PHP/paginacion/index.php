@@ -26,6 +26,15 @@ $articulos = $conexion->prepare("
 	LIMIT $inicio, $postPorPagina
 ");
 
+//Si queremos mostrar el último artículo el primero, es decir, el artículo más nuevo que se vea arriba:
+
+// $articulos = $conexion->prepare("
+// 	SELECT SQL_CALC_FOUND_ROWS * FROM articulos 
+// 	ORDER BY id DESC
+// 	LIMIT $inicio, $postPorPagina
+// ");
+
+
 // Ejecutamos la consulta
 $articulos->execute();
 $articulos = $articulos->fetchAll();
