@@ -1,3 +1,10 @@
+<?php
+        if(isset($_POST['button1'])) {
+            $archivo = 'contador.txt';
+            file_put_contents($archivo, 1);
+        }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +18,10 @@
 	<div class="visitantes">
 		<p class="numero"><?php echo contar_usuarios(false) ?></p>
 		<p class="texto">Visitas</p>
-        <input type="submit" name="select" value="reiniciar" onclick="reiniciar()" />
+        <form method="post">
+            <input type="submit" name="button1"
+                value="Reiniciar"/>
+        </form>
 	</div>
     
 </body>
