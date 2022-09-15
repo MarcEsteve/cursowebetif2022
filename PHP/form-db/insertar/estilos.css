@@ -92,3 +92,7 @@ form input[type="submit"]{
 form input[type="submit"]:hover{
 	background: #a93411;
 }
+
+h1 {
+	text-align: center;
+}
